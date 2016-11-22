@@ -4,6 +4,9 @@ import { Route, IndexRoute,IndexLink, Link ,Router, browserHistory } from 'react
 import Header from './components/header'
 import App from './components/App'
 import About from './components/About'
+import Demo from './components/Demo'
+
+
 
 const ACTIVE = { color: 'red' }
 
@@ -15,6 +18,7 @@ const Index=({children})=>(
 	      <li><IndexLink to="/"           activeStyle={ACTIVE}>/ IndexLink</IndexLink></li>
 	      <li><Link      to="/about"      activeStyle={ACTIVE}>/about</Link></li>
 	      <li><Link      to="/header"      activeStyle={ACTIVE}>/header</Link></li>
+	      <li><Link      to="/demo"      activeStyle={ACTIVE}>/Demo</Link></li>				
 	    </ul>
 		{children}
 	</div>
@@ -36,6 +40,8 @@ export default (
 	      <IndexRoute component={App}/>
 	      <Route path="/about" component={About}/>
 	      <Route path="/header" component={Header}/>
+	      <Route path="/demo" component={Demo}/>				
+
 	    </Route>
     </Router>
 )

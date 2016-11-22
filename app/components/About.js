@@ -12,8 +12,6 @@ class About extends React.Component{
  			url:'http://localhost:9001/name',
  			method:'get',
  			success:function(data){
- 				//console.log(data);
- 				//this.props.list=data;
  				this.setState({dataList:data.list});
  			}.bind(this),
  			error:function(){
