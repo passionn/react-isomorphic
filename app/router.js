@@ -24,16 +24,6 @@ const Index=({children})=>(
 	</div>
 )
 
-
-/*export default (
-    <Route path="/" component={Index}>
-      <IndexRoute component={App}/>
-      <Route path="/about" component={About}/>
-      <Route path="/header" component={Header}/>
-    </Route>
-)*/
-
-
 export default (
 	<Router history={browserHistory} >
 	    <Route path="/" component={Index}>
