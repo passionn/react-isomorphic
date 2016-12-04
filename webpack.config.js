@@ -57,6 +57,7 @@ module.exports = {
 		/*new webpack.SourceMapDevToolPlugin({
 			filename: 'bundle.js.map'
 		}),*/
+		new ExtractTextPlugin("./style/main.css"),
 		new webpack.HotModuleReplacementPlugin()
 		/*,
 				new webpack.DefinePlugin({

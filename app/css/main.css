@@ -1,0 +1,20 @@
+*{
+    margin:0;padding:0;
+}
+.slide{
+    padding: 15;
+    min-height: 100px;
+    color: '#fff'
+}
+
+.slide1{
+     background: #FEA900
+}
+
+.slide2{
+    background: #B3DC4A
+}
+
+.slide3{
+    background: #6AC0FF
+}
